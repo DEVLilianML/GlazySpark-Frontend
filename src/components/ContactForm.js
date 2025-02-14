@@ -19,7 +19,7 @@ const ContactForm = () => {
         console.log('Form submitted:', formData);
         try {
             // Send the form data to the backend API
-            const response = await fetch('http://localhost:5000/api/contact', {
+            const response = await fetch('https://managing-pandora-glazyspark-696ef4ee.koyeb.app/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
