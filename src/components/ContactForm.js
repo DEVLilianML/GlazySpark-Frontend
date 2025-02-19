@@ -19,7 +19,7 @@ const ContactForm = () => {
         console.log('Form submitted:', formData);
         try {
             // Send the form data to the backend API
-            const response = await fetch('${process.env.REACT_APP_BACKEND_URL}/api/contact', {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -36,11 +36,12 @@ const ContactForm = () => {
                     projectNarration: '',
                 });
             } else {
-                alert('Error submitting form');
+                const errorData = await response.json();
+                alert(`Error submitting form: ${errorData.message}`);
             }
         } catch (error) {
             console.error('Error:', error);
-            alert('Error submitting form');
+            alert('Error submitting form. Please try again.');
         }
     };
 
