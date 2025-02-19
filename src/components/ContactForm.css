@@ -149,7 +149,7 @@ form button:hover {
 input[type="text"]::placeholder,
 input[type="tel"]::placeholder,
 input[type="email"]::placeholder {
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #888;
 }
 
@@ -268,7 +268,7 @@ input[type="email"]::placeholder {
         margin-left: 150px;
     }
     textarea::placeholder {
-        font-size: 2rem; /* Increase placeholder font size */
+        font-size: 1rem; /* Increase placeholder font size */
         color: #888; /* Optionally, adjust the color to make it stand out more */
     }
 }

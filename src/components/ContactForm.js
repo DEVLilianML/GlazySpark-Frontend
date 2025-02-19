@@ -19,7 +19,7 @@ const ContactForm = () => {
         console.log('Form submitted:', formData);
         try {
             // Send the form data to the backend API
-            const response = await fetch('https://managing-pandora-glazyspark-696ef4ee.koyeb.app/', {
+            const response = await fetch('${process.env.REACT_APP_BACKEND_URL}/api/contact', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -72,9 +72,12 @@ const ContactForm = () => {
                               type="tel"
                               id="phone"
                               name="phone"
-                              placeholder="Enter your phone number"
+                              placeholder="Enter your phone number (e.g., +234 8012345678)"
                               value={formData.phone}
                               onChange={handleChange}
+                              pattern="^\+?[0-9]{7,15}$" 
+                              inputMode="numeric"
+                               title="Enter a valid phone number with country code (e.g., +2348012345678)"
                               required
                             />
                         </div>
@@ -113,4 +116,4 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
+export default ContactForm;
