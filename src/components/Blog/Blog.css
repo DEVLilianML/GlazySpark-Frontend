@@ -1,0 +1,378 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white; /* Ensure visibility */
+  z-index: 1000; /* Keeps header on top */
+}
+
+body {
+  padding-top: 80px; /* Adjust based on the header height */
+}
+/* Header Styling */
+.blog-button {
+  padding: 8px;
+  background:  #ea7222;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  width: 12%;
+  margin-left: 200px;
+}
+  
+  .blog-button:hover {
+    background: orange;
+  }
+
+
+/* Blog Section Styling */
+.blog-section {
+  padding: 50px;
+  text-align: center;
+  background: #f5f5f5;
+}
+.blog-section h2{
+  font-size: 3rem;
+  font-family: a;
+}
+.blog-grid{
+  display: flex;
+  justify-content: space-between;
+  gap: 27px;
+}
+.blog-card {
+  width: 33%;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.blog-card h2 {
+  margin-top: -15px;
+  margin-bottom: -5px;
+  font-size: 1.6rem;
+}
+.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  color: #ff6600;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+.nav-button {
+  background: none; /* Remove background */
+  color: #007bff; /* Blue color */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: underline; /* Add underline */
+  display: inline; /* Prevent block-level button appearance */
+  transition: color 0.3s;
+  margin-top: 10px;
+}
+
+.nav-button:hover {
+  color: rgb(185, 71, 71);
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+}
+
+.nav-button:disabled {
+  color: gray; /* Gray out when disabled */
+  cursor: default; /* Remove pointer on disabled */
+  text-decoration: none; /* Remove underline for disabled state */
+}
+
+
+
+
+ /* Blog  Page */
+.page-overall {
+  max-width: 1200px; /* Increase container width */
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  max-width: 1000px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-left:110px;
+  margin-top: 170px;;
+}
+
+.blog-writeup {
+  flex: 1.7; /* Reduce size of blog content */
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.blog-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.blog-title {
+  font-size: 1.3rem !important;
+  color: #333;
+  
+}
+
+
+
+/* Increase the space for Tech Updates */
+.techy-news {
+  flex: 1.3; /* Increase size of the tech updates section */
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.techy-news h3 {
+  font-size: 20px;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+.techy-news  h1 {
+  font-size: 40px;
+  font-family: a;
+  color: #0073e6;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .blog-pagezy {
+    flex-direction: column;
+  }
+
+  .blog-writeup, .techy-news {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.techy-posts p {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+}
+.techy-postblog {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  min-height: 250px; /* Ensures proper height */
+  overflow-y: auto; /* Scrollable if content is too long */
+}
+.techy-postblog ul {
+  padding: 0;
+}
+
+.techy-postblog ul li {
+  list-style: none; /* Removes bullet points */
+}
+
+.techy-postblog ul li a {
+  color: orange !important; /* Makes text black */
+  text-decoration: underline; /* Adds underline */
+  font-weight: bold; /* Optional: Makes links stand out */
+  transition: color 0.3s ease-in-out;
+}
+
+.techy-postblog ul li a:hover {
+  color: #0073e6 !important; /* Optional: Changes color on hover */
+}
+
+
+
+/* Style for the Tech Updates Section */
+.techy-posts {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  min-height: 250px; /* Ensures proper height */
+  overflow-y: auto; /* Scrollable if content is too long */
+}
+
+/* Caption Styling */
+.techy-posts h2 {
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-family:  "Montserrat", sans-serif;
+  font-size: 22px;
+}
+
+/* Bullet Point List Styling */
+.techy-posts ul {
+  list-style: none; /* Removes default bullet */
+  padding-left: 20px;
+  margin-top: 15px;
+}
+
+.techy-posts ul li {
+  font-size: 16px;
+  color: #444;
+  font-weight: 500;
+  line-height: 1.8; /* Adds spacing between items */
+  margin-bottom: 8px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Custom Pointing Bullet */
+.techy-posts ul li::before {
+  content: "▶"; /* Pointing bullet */
+  color: #ea7222;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+
+
+.blog-content h3 {
+  font-size: 20px;
+  color: #444;
+  font-weight: bold;
+  margin-top: 15px;
+  text-decoration: underline; /* Underline subheadings */
+
+}
+
+.blog-content ul {
+  padding-left: 20px;
+}
+
+.blog-content ul li {
+  list-style: "👉 "; /* Custom bullet icon */
+  margin-bottom: 10px;
+}
+
+.blog-content strong {
+  color: #000;
+}
+
+
+
+/* Blog Content Styling */
+.blog-content {
+  line-height: 1.8; /* Improved readability */
+  font-size: 18px;
+  font-family: "Poppins", sans-serif; /* Modern and clean font */
+  color: #333;
+  text-align: justify;
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  white-space: pre-line; /* very important it makes the line not to be clustered
+   */
+}
+
+/* Header Styling */
+.blog-content h2 {
+  font-size: 28px;
+  background-color: yellow;
+  color: #d35400; /* Vibrant accent color */
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+.blog-description{
+  font-size: 17px;
+  font-family: a;
+  margin-top: 10px;
+}
+
+
+/* List Styling */
+.blog-content ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.blog-content li {
+  list-style-type: "●"; /* Using a nice bullet */
+  font-size: 17px;
+  margin-bottom: 8px;
+}
+
+/* Call-to-action Section */
+.blog-content .cta {
+  background: #fce4ec;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #d81b60;
+}
+
+/* Highlight Important Parts */
+.blog-content strong {
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+/* Emphasis Styling */
+.blog-content em {
+  color: #8e44ad;
+  font-style: italic;
+}
+
+
+
+/* back to blog button */
+.back-button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+.back-button:hover {
+  background-color: #0056b3;
+}

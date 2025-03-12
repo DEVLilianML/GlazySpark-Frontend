@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
+Sitemap: https://glazyspark-creations.vercel.app/sitemap-index.xml
 User-agent: *
 Disallow:

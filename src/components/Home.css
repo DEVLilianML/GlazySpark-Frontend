@@ -15,6 +15,7 @@ body, html {
   background-color: #f4f4f4;
   line-height: 1.6;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
   .logo{
@@ -68,12 +69,12 @@ body, html {
     color: #FFD700; /* Changes color on hover */
 }
  
-.container button {
-  width: 19%;
+.project-button{
+  width: 12%;
   padding: 10px 20px; /* Adds padding to the button */
   background-color: #FFD700; /* Gold background color */
   color: #1E90FF; /* Electric Blue text color */
-  border-radius: 5px; /* Rounds the corners */
+  border-radius: 15px; /* Rounds the corners */
   cursor: pointer; /* Changes cursor to pointer on hover */
   font-size: 16px; /* Adjusts font size if needed */
    margin-right: 40px;
@@ -100,11 +101,11 @@ button a {
  margin-top: 100px;
 }
 .headerz h1 {
-  font-size: 35px;
+  font-size: 33px;
   color: #4A90E2;
   text-align: center;
   margin-bottom: 20px;
-  padding: 20px;
+  padding: 18px;
 }
 
 .first-container {
@@ -151,7 +152,9 @@ button a {
   margin-top: -70px;
   width: 100%;
   background-repeat: no-repeat;
-  height: 130vh; /* Adjust height as needed */
+  height: auto; /* Change from 140vh to auto */
+  min-height: 140vh; /* Ensure a minimum height */
+  
   
 }
 .background-container::after {
@@ -175,7 +178,7 @@ button a {
   border-radius: 8px;
 }
 .services h2{
-  margin-top: 20px;
+  margin-top: 10px;
   font-size: 50px;
   font-family:Georgia, 'Times New Roman', Times, serif; 
   margin-right: 100px;
@@ -191,9 +194,11 @@ button a {
 }
 .web h2{
   color: yellow;
-  font-size: 30px;
+  font-size: 33px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: start;
+  margin-top: -10px;
+  margin-bottom: 5px;
 
 }
 .web p{
@@ -205,15 +210,16 @@ button a {
 }
 .animate{
   display: block;
-  width: 10%;
+  width: 42% !important;
   text-align: center;
  padding-right: 20%;
   margin-left: 15%;
+  margin-right: 5%;
   margin-top: -120px;
 }
 .animate h2{
   color: #1E3A8A;
-  font-size: xx-large;
+  font-size: 35px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .animate p{
@@ -222,18 +228,46 @@ button a {
   font-family: Arial, Helvetica, sans-serif;
   margin-top: -20px;
 }
+.udesign {
+  width: 30%;
+  text-align: start;
+  align-items: center;
+  margin-top: -170px;
+  margin-left: 35%;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 2;
+}
+.udesign h2{
+  color: yellow !important;
+  font-size: 33px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.udesign p{
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -20px;
+  color: whitesmoke;
+  
+}
+
 .social{
   width: 35%;
   text-align: start;
   align-items: center;
   padding: 20px;
-  margin-left: 35%;
-  margin-top: -90px;
+  margin-left: 55%;
+  margin-top: -10px;
+  
 }
 .social h2{
   color: yellow;
-  font-size: 30px;
+  font-size: 27px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 5px;
+  text-align: start;
+  
 
 }
 .social p{
@@ -265,7 +299,7 @@ button a {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: 20px;
+  
  }
  .lottie-container{
   margin-right: 80px;
@@ -662,7 +696,7 @@ img {
     text-align: start;
    padding-right: 2%;
     margin-left: 15%;
-    margin-top: -150px;
+    margin-top: -190px;
   }
   .animate h2{
     font-size: 2rem;
