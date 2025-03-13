@@ -71,9 +71,9 @@ body, html {
  
 .project-button{
   width: 12%;
-  padding: 10px 20px; /* Adds padding to the button */
+  padding: 8px 7px; /* Adds padding to the button */
   background-color: #FFD700; /* Gold background color */
-  color: #1E90FF; /* Electric Blue text color */
+  color: black; /* Electric Blue text color */
   border-radius: 15px; /* Rounds the corners */
   cursor: pointer; /* Changes cursor to pointer on hover */
   font-size: 16px; /* Adjusts font size if needed */
