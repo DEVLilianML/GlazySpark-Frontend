@@ -193,7 +193,7 @@ button a {
   
 }
 .web h2{
-  color: yellow;
+  color: rgb(179, 224, 89);
   font-size: 33px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: start;
@@ -210,7 +210,7 @@ button a {
 }
 .animate{
   display: block;
-  width: 42% !important;
+  width: 40% !important;
   text-align: center;
  padding-right: 20%;
   margin-left: 15%;
@@ -218,9 +218,10 @@ button a {
   margin-top: -120px;
 }
 .animate h2{
-  color: #1E3A8A;
+  color: rgb(247, 247, 14) !important;
   font-size: 35px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-right: 25%;
 }
 .animate p{
   color: whitesmoke;
@@ -232,13 +233,15 @@ button a {
   width: 30%;
   text-align: start;
   align-items: center;
-  margin-top: -170px;
-  margin-left: 35%;
+  margin-top: -150px;
+  margin-left: 37%;
   position: relative;
   z-index: 2;
 }
+
+
 .udesign h2{
-  color: yellow !important;
+  color:  rgb(179, 224, 89) !important;
   font-size: 33px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 
@@ -247,7 +250,7 @@ button a {
   font-size: 28px;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: -20px;
-  color: white;
+  color: #E0E0E0; /* Softer white */
   
 }
 
@@ -261,7 +264,7 @@ button a {
   
 }
 .social h2{
-  color: yellow;
+  color: rgb(229, 229, 31);
   font-size: 27px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 5px;
@@ -276,6 +279,7 @@ button a {
   margin-top: -20px;
 }
 .animate h2 {
+  text-align: center;
   color: white; /* Navy Blue or any preferred color */
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Light shadow for contrast */
 }
