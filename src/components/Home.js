@@ -2,7 +2,6 @@ import React, { Suspense, lazy } from 'react';
 import Header from "./Header"; // Import the Header
 import "./Home.css";
 import staff from './Assets/staff.webp';
-import Lottie from 'lottie-react';
 import building from './Assets/building.png';
 import animationData from './Assets/animationz.json';
 import boyn from './Assets/boyn.webp'
@@ -27,6 +26,9 @@ const Home = () => {
                       <h1>Website Design, UI/UX, and Animation Services to Elevate Your Business</h1>
                     </div>
                     <div className='first-container' >
+                      <button className="mobile-prjectBtn">
+                       <a href="#contact">Start a Project</a>
+                      </button>
                        <div className="image-container">
                         <img  className='staff' src={staff} alt='glazyspark staff' loading="lazy" />
                        </div >
