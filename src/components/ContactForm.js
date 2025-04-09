@@ -73,7 +73,7 @@ const ContactForm = () => {
                               type="tel"
                               id="phone"
                               name="phone"
-                              placeholder="Enter your phone number (e.g., +234 8012345678)"
+                              placeholder="phone number (e.g, +234 8012345678)"
                               value={formData.phone}
                               onChange={handleChange}
                               pattern="^\+?[0-9]{7,15}$" 

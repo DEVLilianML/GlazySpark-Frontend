@@ -14,7 +14,7 @@ const Footer = () => {
                       We help businesses grow by creating exceptional digital experiences.
                     </p>
                 </div>
-                <div className="services">
+                <div className="footer-services">
                     <h3>Our Services</h3>
                     <ul>
                         <li>Web Development</li>
